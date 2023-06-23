@@ -1,35 +1,46 @@
 import mongoose from "mongoose";
 // --------------------------------------
-const UserSchema = new mongoose.Schema(
+const VideoSchema = new mongoose.Schema(
   {
-    name: {
+    userId: {
       type: String,
       required: true,
-      unique: true,
     },
-    email: {
+    title: {
       type: String,
       required: true,
-      unique: true,
     },
-    password: {
+    desc: {
       type: String,
       required: true,
-      unique: true,
     },
-    img: {
+    imgUrl: {
       type: String,
+      required: true,
     },
-    subscribers: {
+    videoUrl: {
+      type: String,
+      required: true,
+    },
+    views: {
       type: Number,
       default: 0,
     },
-    subscribedUsers: {
+    tags: {
       type: [String],
+      default: [],
+    },
+    likes: {
+      type: [String],
+      default: [],
+    },
+    dislikes: {
+      type: [String],
+      default: [],
     },
   },
   { timestamps: true }
 );
 // --------------------------------------
-export default mongoose.model("User", UserSchema);
+export default mongoose.model("Video", VideoSchema);
 // --------------------------------------
