@@ -180,6 +180,16 @@ destroy@1.2.0:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
 
+do@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/do/-/do-0.6.2.tgz#ccc54906c26192aaa6eb5bbbd936d88f2951d25b"
+  integrity sha512-N8bvwq4voCS0s76DYCc5esLxbsNfOxj5Uli/262s8NspMOy6kxvT5xEQnkeZxfmsIMK7MxiteKDauCbgO6jh9w==
+
+dotenv@^16.3.1:
+  version "16.3.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -706,6 +716,11 @@ supports-color@^5.5.0:
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
   dependencies:
     has-flag "^3.0.0"
+
+tenv@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/tenv/-/tenv-0.2.3.tgz#12637615061dc6d0fcdabad20abc592159085f2e"
+  integrity sha512-HB1/2XsYu1p93H+HkXAVs0wyuORwZ2qzNV85ORcj4HkOTk1K0lqq1PbJZIrFuxa7QqPU+4LG8nCT93x6+GtMaw==
 
 to-regex-range@^5.0.1:
   version "5.0.1"
