@@ -1,5 +1,11 @@
-import express from "express";
-import {} from "../controllers/comments.js";
-const router = express.Router();
-router.get("/test", test);
-export default router;
+import mongoose from "mongoose";
+import User from "../models/User";
+// -----------------------------------
+
+export const signup = async (req, res) => {
+  try {
+    const newUser = new User();
+  } catch (err) {
+    // todo
+  }
+};
