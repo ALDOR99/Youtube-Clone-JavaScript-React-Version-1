@@ -7,6 +7,7 @@ const Container = styled.div`
 `;
 const Main = styled.div`
   flex: 7;
+  background-color: #181818;
 `;
 const Wrapper = styled.div``;
 function App() {
@@ -15,7 +16,50 @@ function App() {
       <Menu />
       <Main>
         <Navbar />
-        <Wrapper>video cards</Wrapper>
+        <Wrapper>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+          <h1>Selam ne haber dostum</h1>
+        </Wrapper>
       </Main>
     </Container>
   );
