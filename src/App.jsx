@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import Menu from "./components/menu";
 import Navbar from "./components/Navbar";
+import { darkTheme, lightTheme } from "./utills/Theme";
 // --------------------------------
 const Container = styled.div`
   display: flex;
@@ -9,59 +10,63 @@ const Main = styled.div`
   flex: 7;
   background-color: #181818;
 `;
+
 const Wrapper = styled.div``;
+
 function App() {
   return (
-    <Container>
-      <Menu />
-      <Main>
-        <Navbar />
-        <Wrapper>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-          <h1>Selam ne haber dostum</h1>
-        </Wrapper>
-      </Main>
-    </Container>
+    <ThemeProvider theme={lightTheme}>
+      <Container>
+        <Menu />
+        <Main>
+          <Navbar />
+          <Wrapper>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+            <h1>Selam ne haber dostum</h1>
+          </Wrapper>
+        </Main>
+      </Container>
+    </ThemeProvider>
   );
 }
 
