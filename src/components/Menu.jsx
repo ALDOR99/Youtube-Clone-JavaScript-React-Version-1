@@ -16,17 +16,18 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import SettingsBrightnessOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+
 // --------------------------------------
 const Container = styled.div`
   flex: 1;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.bgLighter};
   height: 100vh;
   color: ${({ theme }) => theme.text};
   font-size: 14px;
   position: sticky;
   top: 0;
 `;
-
 const Wrapper = styled.div`
   padding: 18px 26px;
 `;
@@ -37,6 +38,7 @@ const Logo = styled.div`
   font-weight: bold;
   margin-bottom: 25px;
 `;
+
 const Img = styled.img`
   height: 25px;
 `;
@@ -46,16 +48,19 @@ const Item = styled.div`
   align-items: center;
   gap: 20px;
   cursor: pointer;
-  padding: 7px 0px;
+  padding: 7.5px 0px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.soft};
+  }
 `;
 
 const Hr = styled.hr`
-  margin: 15px;
+  margin: 15px 0px;
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
 const Login = styled.div``;
-
 const Button = styled.button`
   padding: 5px 15px;
   background-color: transparent;
@@ -70,9 +75,15 @@ const Button = styled.button`
   gap: 5px;
 `;
 
+const Title = styled.h2`
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+`;
 // --------------------------------------
 
-const Menu = () => {
+const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
       <Wrapper>
@@ -102,7 +113,7 @@ const Menu = () => {
           History
         </Item>
         <Login>
-          Sign in to like videos comment,and subscribe
+          Sign in to like videos, comment, and subscribe.
           <Button>
             <AccountCircleOutlinedIcon />
             SIGN IN
@@ -146,6 +157,11 @@ const Menu = () => {
         <Item>
           <HelpOutlineOutlinedIcon />
           Help
+        </Item>
+
+        <Item onClick={() => setDarkMode(!darkMode)}>
+          <SettingsBrightnessOutlinedIcon />
+          {darkMode ? "Light" : "Dark"} Mode
         </Item>
       </Wrapper>
     </Container>
