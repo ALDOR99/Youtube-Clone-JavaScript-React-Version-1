@@ -16,9 +16,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import SettingsBrightnessOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-
-// --------------------------------------
+import SettingsBrightnessIcon from "@mui/icons-material/SettingsBrightness"; // --------------------------------------
 const Container = styled.div`
   flex: 1;
   background-color: ${({ theme }) => theme.bgLighter};
@@ -38,11 +36,9 @@ const Logo = styled.div`
   font-weight: bold;
   margin-bottom: 25px;
 `;
-
 const Img = styled.img`
   height: 25px;
 `;
-
 const Item = styled.div`
   display: flex;
   align-items: center;
@@ -54,12 +50,10 @@ const Item = styled.div`
     background-color: ${({ theme }) => theme.soft};
   }
 `;
-
 const Hr = styled.hr`
   margin: 15px 0px;
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
-
 const Login = styled.div``;
 const Button = styled.button`
   padding: 5px 15px;
@@ -74,15 +68,14 @@ const Button = styled.button`
   align-items: center;
   gap: 5px;
 `;
-
 const Title = styled.h2`
   font-size: 14px;
   font-weight: 500;
   color: #aaaaaa;
   margin-bottom: 20px;
 `;
-// --------------------------------------
 
+// --------------------------------------
 const Menu = ({ darkMode, setDarkMode }) => {
   return (
     <Container>
@@ -120,6 +113,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
           </Button>
         </Login>
         <Hr />
+        <Title> BEST OF AlisTube </Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music
@@ -160,7 +154,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         </Item>
 
         <Item onClick={() => setDarkMode(!darkMode)}>
-          <SettingsBrightnessOutlinedIcon />
+          <SettingsBrightnessIcon />
           {darkMode ? "Light" : "Dark"} Mode
         </Item>
       </Wrapper>
