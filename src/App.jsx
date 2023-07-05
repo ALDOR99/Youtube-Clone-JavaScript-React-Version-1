@@ -1,6 +1,8 @@
 import styled, { ThemeProvider } from "styled-components";
 import Menu from "./components/menu";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Video from "./pages/Video";
 import { darkTheme, lightTheme } from "./utills/Theme";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,7 +14,9 @@ const Main = styled.div`
   flex: 7;
   background-color: ${({ theme }) => theme.bg};
 `;
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding: 22px 96px;
+`;
 
 // --------------------------------
 
@@ -30,7 +34,7 @@ function App() {
               <Routes>
                 <Route path="/">
                   <Route index element={<Home />} />
-                  <Route path="signin" element={<SignIn />} />
+                  {/* <Route path="signin" element={<SignIn />} /> */}
                   <Route path="video">
                     <Route path=":id" element={<Video />} />
                   </Route>

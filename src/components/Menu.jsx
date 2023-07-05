@@ -82,7 +82,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
       <Wrapper>
         <Logo>
           <Img src={a} />
-          AliTube
+          AlisTube
         </Logo>
         <Item>
           <HomeIcon />
