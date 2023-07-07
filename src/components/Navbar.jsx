@@ -4,12 +4,14 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
 // --------------------------
+
 const Container = styled.div`
   position: sticky;
   top: 0;
   background-color: ${({ theme }) => theme.bgLighter};
   height: 56px;
 `;
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -18,6 +20,7 @@ const Wrapper = styled.div`
   padding: 0px 20px;
   position: relative;
 `;
+
 const Search = styled.div`
   width: 40%;
   position: absolute;
@@ -31,10 +34,14 @@ const Search = styled.div`
   border: 1px solid #ccc;
   border-radius: 3px;
 `;
+
 const Input = styled.input`
   border: none;
   background-color: transparent;
+  outline: none;
+  color: ${({ theme }) => theme.text};
 `;
+
 const Button = styled.button`
   padding: 5px 15px;
   background-color: transparent;
@@ -47,7 +54,6 @@ const Button = styled.button`
   align-items: center;
   gap: 5px;
 `;
-
 // --------------------------
 
 const Navbar = () => {

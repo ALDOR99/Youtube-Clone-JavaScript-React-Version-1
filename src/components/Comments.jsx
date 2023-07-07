@@ -7,7 +7,7 @@ const Container = styled.div``;
 
 const NewComment = styled.div`
   display: flex;
-  align-itmes: center;
+  align-items: center;
   gap: 10px;
 `;
 

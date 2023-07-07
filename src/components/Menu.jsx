@@ -37,9 +37,11 @@ const Logo = styled.div`
   font-weight: bold;
   margin-bottom: 25px;
 `;
+
 const Img = styled.img`
   height: 25px;
 `;
+
 const Item = styled.div`
   display: flex;
   align-items: center;
@@ -51,10 +53,12 @@ const Item = styled.div`
     background-color: ${({ theme }) => theme.soft};
   }
 `;
+
 const Hr = styled.hr`
   margin: 15px 0px;
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
+
 const Login = styled.div``;
 const Button = styled.button`
   padding: 5px 15px;
@@ -69,6 +73,7 @@ const Button = styled.button`
   align-items: center;
   gap: 5px;
 `;
+
 const Title = styled.h2`
   font-size: 14px;
   font-weight: 500;

@@ -6,11 +6,13 @@ const Container = styled.div`
   gap: 10px;
   margin: 30px 0px;
 `;
+
 const Avatar = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50%;
 `;
+
 const Details = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,16 +23,17 @@ const Name = styled.span`
   font-size: 13px;
   font-weight: 500;
 `;
+
 const Date = styled.span`
   font-size: 12px;
   font-weight: 400;
-  color: ${({ theme }) => theme.Textsoft};
+  color: ${({ theme }) => theme.textSoft};
   margin-left: 5px;
 `;
-const Text = styled.span`
-  font-size: ;
-`;
 
+const Text = styled.span`
+  font-size: 14px;
+`;
 // --------------------------
 
 const Comment = () => {
